@@ -225,6 +225,8 @@ client.urgent           #40a02b #1e1e2e #bac2de #900000     #40a02b
 
 
 #AUTOSTART
-exec_always --no-startup-id autotiling
- 
-
+exec_always --no-startup-id autotiling #install autotiling
+exec_always --no-startup-id picom #install picom-git from yay
+exec_always --no-startup-id xrdb -merge /home/vito/.Xresources #install libxft
+exec_always --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 #install mate-polkit
+exec_always --no-startup-id waypaper --restore #install waypaper from yay
